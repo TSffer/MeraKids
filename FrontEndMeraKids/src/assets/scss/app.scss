@@ -8,16 +8,16 @@ File: scss
 /******************* 
 This is the font import from the google api 
 *******************/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800');
 @font-face {
   font-family: 'Calafia-Regular';
-  src: url('font/Calafia-Regular.eot?#iefix') format('embedded-opentype'),  
-       url('font/Calafia-Regular.otf')  format('opentype'),
-       url('font/Calafia-Regular.woff') format('woff'), 
-         url('font/Calafia-Regular.ttf')  format('truetype'), 
-         url('font/Calafia-Regular.svg#Calafia-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    src: url('font/Calafia-Regular.eot?#iefix') format('embedded-opentype'),  
+        url('font/Calafia-Regular.otf')  format('opentype'),
+        url('font/Calafia-Regular.woff') format('woff'), 
+        url('font/Calafia-Regular.ttf')  format('truetype'), 
+        url('font/Calafia-Regular.svg#Calafia-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 /******************* 
 Global Styles 
