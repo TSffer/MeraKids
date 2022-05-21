@@ -35,7 +35,8 @@ Header 6
         .nav-link{
             padding: 35px 15px;
             color:rgba(255, 255, 255, 0.5);
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: bold;
         }
         .nav-item:hover .nav-link, .nav-item.active .nav-link{
             color:rgba(255, 255, 255, 1);
@@ -135,8 +136,9 @@ Subtitle
 *******************/
 
 .subtitle {
-    color: $muted;
+    color: $paragraph-text;
     line-height: 25px;
+    font-weight: bold;
 }
 
 
@@ -147,6 +149,7 @@ card
 .card {
     border: 0px;
     margin-bottom: 30px;
+    background-color: $themecolor-card;
     &.card-shadow {
         box-shadow: $card-shadow;
     }

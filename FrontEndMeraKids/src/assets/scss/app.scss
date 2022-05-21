@@ -32,7 +32,7 @@ body {
     font-family: $bodyfont;
     margin: 0; 
     overflow-x: hidden;
-    color: $bodytext;
+    color: $dark;
     font-weight: 300; 
 }
 
@@ -89,6 +89,7 @@ h5,
 h6 {
     color: $headingtext;
     font-family: $headingfont;
+    font-weight: 900
 }
 
 h1 {
