@@ -7,19 +7,21 @@ import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
 import { ServicesComponent } from './services/services.component';
 
 import { FullComponent } from './layout/full/full.component';
+import { RightslawComponent } from './rightslaw/rightslaw.component';
 
 
 const routes: Routes = [
-  {
-    path: '',
-    component: FullComponent,
-    children: [
-		{ path: '', component: BlogComponent },
-		{ path: 'blogDetail/:id', component: BlogDetailComponent },
-		{ path: 'about', component: AboutComponent },
-		{ path: 'services', component: ServicesComponent},
-    ]
-  }
+	{
+		path: '',
+		component: FullComponent,
+		children: [
+			{ path: '', component: BlogComponent },
+			{ path: 'blogDetail/:id', component: BlogDetailComponent },
+			{ path: 'about', component: AboutComponent },
+			{ path: 'services', component: ServicesComponent},
+			{ path: 'rightslaw', component: RightslawComponent},
+		]
+	}
 ];
 
 @NgModule({

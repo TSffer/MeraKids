@@ -5,22 +5,22 @@
   <div class="container">
     <!-- Row  -->
     <div class="row justify-content-center">
-      <!-- Column -->
-      <div class="col-lg-9 col-md-6 align-self-center text-center no-trans">
-        <h1 class="title">MeraKids</h1>
-        <h5 class="subtitle op-5">
-			Somos una comunidad que busca apoyar a familias con hijos e hijas con necesidades educativas especiales a través de un programa de evaluación e intervención, 
-			talleres socioemocionales y academicos. 
-        </h5>
+      	<!-- Column -->
+      	<div class="col-lg-9 col-md-6 align-self-center text-center no-trans">
+			<h1 class="title">MeraKids</h1>
+			<h5 class="subtitle op-5">
+				Somos una organización que busca apoyar a las familias con hijos e hijas
+				con necesidades educativas especiales (NEE) a tráves  de un programa de
+				evaluación e intervención, talles socioemocionales y académicos.
+			</h5>
 
-        <!--<a
-          href="https://www.wrappixel.com/free-wrapkit-angular-blog"
-          class="btn btn-md m-t-30 btn-success-gradiant font-14"
-          target="blank"
-          >Download Free</a
-        >-->
-      </div>
-      <!-- Column -->
+			<a href="https://www.wrappixel.com/free-wrapkit-angular-blog_ff"
+				class="btn btn-md m-t-30 btn-success-gradiant font-18"
+				target="blank">
+					Contactarse
+			</a>
+      	</div>
+      	<!-- Column -->
     </div>
   </div>
 </div>
@@ -48,8 +48,7 @@
     <div class="col-md-8 no-trans text-center">
       <h2 class="title">Publicaciones Recientes</h2>
       <h6 class="subtitle">
-        You can relay on our amazing features list and also our customer
-        services will be great experience for you without doubt and in no-time
+        Conoce nuestras publicaciones en Instagram. Revisa nuestras actividades
       </h6>
     </div>
     <!-- Column -->
@@ -61,10 +60,10 @@
         	<div class="row">
           	<div class="col-md-2 no-trans">
             	<span class="text-dark font-medium">{{ bl.blogDate }}</span>
-            	<h6 class="card-subtitle font-12 mt-1">By John Deo</h6>
+            	<h6 class="card-subtitle font-12 mt-1">MeraKids</h6>
           	</div>
           	<div class="col-md-7 no-trans">
-            	<h5 class="font-medium cursor-pointer" (click)="viewDetail(bl.id)">
+            	<h5 class="font-medium cursor-pointer" (click)="viewInstagram(bl)">
               		{{ bl.heading.substring(0, 50) }}..
             	</h5>
             <p class="m-t-20">
@@ -75,7 +74,7 @@
             <a
               class="linking font-medium text-themecolor m-t-10 cursor-pointer"
             >
-              <span (click)="viewDetail(bl.id)">Show Detail</span>
+              <span (click)="viewInstagram(bl)">Ir Publicación</span>
               <em class="ti-arrow-right"></em>
             </a>
           </div>

@@ -1132,7 +1132,7 @@ Buttons
 
 .btn-success-gradiant{
     @include linear-gradient (to right, $success 0%, $success-dark 100%);
-    border:0px;
+    border:1px;
     
     &:hover{
         @include linear-gradient (to right, $success-dark 0%, $success 100%);

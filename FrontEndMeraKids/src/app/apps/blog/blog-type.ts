@@ -1,5 +1,6 @@
 export class Blog {
   id: number = 0;
+  link: string = '';
   image: string = '';
   heading: string = '';
   subHeading: string = '';
