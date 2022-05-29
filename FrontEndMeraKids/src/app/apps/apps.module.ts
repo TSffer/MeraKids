@@ -1,3 +1,4 @@
+import { ServiceDerechosService } from './rightslaw/derechos-service.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -20,6 +21,7 @@ import { FullComponent } from './layout/full/full.component';
 import { BannerComponent } from './shared/banner/banner.component';
 import { BannerNavigationComponent } from './shared/banner-navigation/banner-navigation.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { RightslawComponent } from './rightslaw/rightslaw.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     // BannerContentComponent,
     BannerNavigationComponent,
     FooterComponent,
+    RightslawComponent,
   ],
   imports: [
     CommonModule,
@@ -43,6 +46,9 @@ import { FooterComponent } from './shared/footer/footer.component';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [ServiceblogService],
+  providers: [
+    ServiceblogService,
+    ServiceDerechosService
+  ],
 })
 export class AppsModule {}

@@ -8,6 +8,7 @@ import { ServicesComponent } from './services/services.component';
 
 import { FullComponent } from './layout/full/full.component';
 import { RightslawComponent } from './rightslaw/rightslaw.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
 			{ path: 'about', component: AboutComponent },
 			{ path: 'services', component: ServicesComponent},
 			{ path: 'rightslaw', component: RightslawComponent},
+			{ path: 'contact', component: ContactComponent}
 		]
 	}
 ];

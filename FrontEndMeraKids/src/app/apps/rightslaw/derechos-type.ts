@@ -1,4 +1,4 @@
-export class Blog {
+export class Derechos {
     id: number = 0;
     link: string = '';
     image: string = '';
