@@ -14,33 +14,38 @@
   </div>
 </div>
 
-<div class="container spacer">
+<br/>
+<div class="container">
 	<div class="row justify-content-center">
 		<!-- Column -->
-		<div class="col-md-8 no-trans text-center">
+		<!--<div class="col-md-8 no-trans text-center">
 			<h2 class="title">Conoce tus derechos</h2>
 			<h6 class="subtitle">
 				Organización que brinda apoyo psico-educativo y socioemocional a niños y adolescentes con necesidades educativas especiales.
 			</h6>
-		</div>
+		</div>-->
 		<!-- Column -->
 	</div>
 	
 	<div class="row m-t-40 justify-content-center">
   	<!-- Column -->
-  	<div class="col-md-8 no-trans border-bottom mb-4" *ngFor="let bl of service.Derechos">
+  	<div class="col-md-12 no-trans border-bottom mb-4" *ngFor="let bl of service.Derechos">
 		<div class="card" data-aos="flip-left" data-aos-duration="1200">
 		 	<div class="row">
 				<div class="col-md-2 no-trans">
-					<img [src]="bl.image" class="rounded img-responsive" alt="wrapkit" />
+					<hr/>
+					<img [src]="bl.image" class="rounded img-responsive" style="padding-left: 15px;" alt="Merakids" />
 				</div>
 				<div class="col-md-9 no-trans">
-					<h5 class="font-medium cursor-pointer" >
-							{{ bl.heading.substring(0, 50) }}.
-					</h5>
-					<p class="m-t-20" align="justify">
-						{{ bl.subHeading }}
-					</p>
+					<hr/>
+					<h3 class="font-bold cursor-pointer" >
+							{{ bl.heading }}.
+					</h3>
+					<ol>	
+						<li class="p" *ngFor="let der of bl.subHeading">
+							{{ der }}
+						</li>
+					</ol>
 				</div>
 		  	</div>
 		</div>

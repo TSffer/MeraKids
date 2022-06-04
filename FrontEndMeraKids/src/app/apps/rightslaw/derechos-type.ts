@@ -3,7 +3,7 @@ export class Derechos {
     link: string = '';
     image: string = '';
     heading: string = '';
-    subHeading: string = '';
+    subHeading: string[] = [];
     blogDate: string = '';
     blogDetail: string = '';
 }

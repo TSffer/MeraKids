@@ -1,3 +1,9 @@
 .border-bottom {
     border-bottom: 1px solid #007aff!important;
 }
+
+.p {
+    color:  #196dc6;
+    line-height: 25px;
+    font-weight: lighter;
+}
