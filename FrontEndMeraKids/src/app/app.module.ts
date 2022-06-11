@@ -10,12 +10,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './apps/contact/contact.component';
+import { OptionesComponent } from './apps/contact/relay-on/opciones.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
+    OptionesComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,7 @@ import { ContactComponent } from './apps/contact/contact.component';
     HttpClientModule,
     NgbModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

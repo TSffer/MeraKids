@@ -32,14 +32,13 @@
   	<div class="col-md-12 no-trans border-bottom mb-4" *ngFor="let bl of service.Derechos">
 		<div class="card" data-aos="flip-left" data-aos-duration="1200">
 		 	<div class="row">
-				<div class="col-md-2 no-trans">
-					<hr/>
+				<div class="col-md-3 no-trans spacer">
 					<img [src]="bl.image" class="rounded img-responsive" style="padding-left: 15px;" alt="Merakids" />
 				</div>
 				<div class="col-md-9 no-trans">
 					<hr/>
 					<h3 class="font-bold cursor-pointer" >
-							{{ bl.heading }}.
+							{{ bl.heading }}
 					</h3>
 					<ol>	
 						<li class="p" *ngFor="let der of bl.subHeading">

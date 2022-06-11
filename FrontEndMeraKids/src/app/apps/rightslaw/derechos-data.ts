@@ -4,7 +4,7 @@ export const derechos: Derechos[] = [
 	{
 		id: 1,
 		link: 'https://www.instagram.com/p/CdKBXXGrmDx/?igshid=YmMyMTA2M2Y=',
-		image: 'assets/images/blog/101.jpg',
+		image: '../assets/images/derechos/derechos1.png',
 		heading: 'Derechos de los Niños',
 		subHeading: ["La no discriminación",  "El interés superior del niño", "El derecho a la vida", "Supervivencia y el desarrollo", "El respeto por los puntos de vista del niño", 
 					"La igualdad sin ningún tipo de distinción discriminación por raza, color, sexo, idioma, religión y nacionalidad",  "Protección para su desarrollo físico, mental y social",
@@ -16,7 +16,7 @@ export const derechos: Derechos[] = [
 	{
 		id: 2,
 		link: 'https://www.instagram.com/p/Ca3S_8Ar0ox/?igshid=YmMyMTA2M2Y=',
-		image: 'assets/images/blog/404.jpg',
+		image: '../assets/images/derechos/derechos2.png',
 		heading: 'Derecho de las personas discapacitadas',
 		subHeading: ["Igualdad ante la ley sin discriminación", "Ser juzgados en pleno uso de sus derechos y contar con la defensa debida", "Derecho a la vida, la libertad y la seguridad"
 					, "Protección contra la explotación, la violencia y el abuso", "Protección contra la tortura", "Derecho al respeto de la integridad física y mental"
@@ -31,7 +31,7 @@ export const derechos: Derechos[] = [
 	{
 		id: 3,
 		link: 'https://www.instagram.com/p/Ca3S_8Ar0ox/?igshid=YmMyMTA2M2Y=',
-		image: 'assets/images/blog/404.jpg',
+		image: '../assets/images/derechos/derechos3.png',
 		heading: 'Derecho Humanos',
 		subHeading: ["Derecho a la vida", "Derecho a la igualdad y prohibición de discriminación", "Igualdad entre mujeres y hombres", "Igualdad ante la ley", "Libertad de la persona"
 					, "Derecho a la integridad y seguridad personales","Libertad de trabajo, profesión, industria o comercio", "Libertad de expresión", "Libertad de conciencia"

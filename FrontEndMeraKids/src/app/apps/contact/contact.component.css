@@ -1,26 +1,22 @@
-button{
+/*button{
     width:20%;
     margin-left:40%;
     margin-right:40%;
 }
-
+*/
 .login-box{
     margin: auto;
-    margin-top: 15%;
+    margin-top: 0;
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-    width: 100%;
-    padding-right: 200px;
-    padding-left: 200px;
-    margin-right: auto;
-    margin-left: auto;
+h5{
+    text-align: start;
 }
 
-.input-pad{
-    width: 100%;
-    padding-right: 200px;
-    padding-left: 200px;
-    margin-right: auto;
-    margin-left: auto;
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1506px;
+}
+
+.card-header {
+    background-color: #d8effd;
 }
