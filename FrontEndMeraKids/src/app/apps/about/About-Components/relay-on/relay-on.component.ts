@@ -21,7 +21,7 @@ export class RelayOnComponent implements OnInit {
     {
       icon: '../assets/images/logros/familias.png',
       field: '+100',
-      fieldText: 'Familias apoyadas a través de nuestros programas de orientación y consejeria, talleres socioemocionales y comunidad de padres'
+      fieldText: 'Familias apoyadas a través de nuestros programas de orientación y consejería, talleres socioemocionales y comunidad de padres'
     }
   ];
 

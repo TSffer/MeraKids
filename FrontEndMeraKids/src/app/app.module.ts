@@ -11,13 +11,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './apps/contact/contact.component';
 import { OptionesComponent } from './apps/contact/relay-on/opciones.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
-    OptionesComponent
+    OptionesComponent, 
   ],
   imports: [
     BrowserModule,
@@ -26,6 +28,8 @@ import { OptionesComponent } from './apps/contact/relay-on/opciones.component';
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
+    CarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

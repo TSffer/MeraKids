@@ -20,3 +20,7 @@ h5{
 .card-header {
     background-color: #d8effd;
 }
+li {
+    font-style: oblique;
+    color: #007aff;
+}
