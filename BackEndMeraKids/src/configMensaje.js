@@ -1,17 +1,23 @@
 const nodemailer = require("nodemailer");
 
 module.exports = (formulario) => {
+    console.log(formulario.nombre);
     var transporter = nodemailer.createTransport({
-        service: "gmail",
+        host: 'smtp.mail.yahoo.com',
+        port: 465,
+        service: "yahoo",
+        secure: false,
         auth: {
-            user: "merakidsweb@gmail.com",
-            pass: "Sanpablo2022$",
-        }
+            user: "merakidsweb@yahoo.com",
+            pass: "dxlpjnvcccgwaucf",
+        },
+        debug: false,
+        logger: true
     });
 
     const mailOptions = {
-        from: `"${formulario.nombre}" <${formulario.email}>`,
-        to: 'lttitosurco@gmail.com', // Cambia esta parte por el destinatario
+        from: "merakidsweb@yahoo.com",
+        to: 'merakidswebs@gmail.com', // Cambia esta parte por el destinatario
         subject: formulario.asunto,
         html: `
         <strong>Nombre:</strong> ${formulario.nombre} <br/>

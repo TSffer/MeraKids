@@ -21,22 +21,33 @@
 	<br/>
 	<div class="container">
 		<!-- Row  -->
-		<div class="row justify-content-center">
-			<div class="col-md-12 no-trans">
-				<h3 class="title text-center">Oportunidades que te brinda ser voluntario MeraKids</h3>
-				<h6 class="subtitle">
-					<i>"A los voluntarios no se les paga, no porque no valgan nada, sino porque no tienen precio"</i>
-				</h6>
-				<ul>
-					<li>Capacidad de liderar proyectos con gran impacto social</li>
-					<li>Poner en práctica y desarrollar habilidades de trabajo en equipo</li>
-					<li>Ganar experiencia en el ámbito de los voluntariados</li>
-					<li>Crear y ampliar tu red de contactos, esenciales para tu desarrollo profesional</li>
-					<li>Oportunidad de seguir tu pasión</li>
-					<li>Agrega valor y conocimiento a tu experiencia profesional</li>
-					<li>Construye nuevas experiencias</li>
-					<li>Ventana para conocer más a tu comunidad</li>
-				</ul>
+		<div class="row wrap-feature-22">
+			
+			<!-- Column -->
+			<div class="col-lg-6 no-trans" style="padding-top: 20px;">
+				<div class="row justify-content-center">
+					<div class="col-md-12 no-trans">
+						<h3 class="title text-center">Oportunidades que te brinda ser voluntario MeraKids</h3>
+						<h6 class="subtitle">
+							<i>"A los voluntarios no se les paga, no porque no valgan nada, sino porque no tienen precio"</i>
+						</h6>
+						<ul>
+							<li>Capacidad de liderar proyectos con gran impacto social</li>
+							<li>Poner en práctica y desarrollar habilidades de trabajo en equipo</li>
+							<li>Ganar experiencia en el ámbito de los voluntariados</li>
+							<li>Crear y ampliar tu red de contactos, esenciales para tu desarrollo profesional</li>
+							<li>Oportunidad de seguir tu pasión</li>
+							<li>Agrega valor y conocimiento a tu experiencia profesional</li>
+							<li>Construye nuevas experiencias</li>
+							<li>Ventana para conocer más a tu comunidad</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Column -->
+					
+			<div class="col-lg-6" style="padding-top: 10px;" data-aos="flip-up" data-aos-duration="1200">
+				<img  width="250px" [src]="imagePathContactenos" class="rounded" alt="wrapkit" />
 			</div>
 		</div>
 	</div>
@@ -54,24 +65,29 @@
 							<i>"¡Qué  ilusión tenerte en nuestro Team Merakids!"</i>
 						</h6>
 						<div class="card-body">
-							<form (ngSubmit)="contactForm(form1.value)" #form1="ngForm">
-							<div class="form-group">
-								<h5>Nombre</h5>
-								<input type="text" class="form-control"  name="nombre" ngModel required>
-							</div>
-							<div class="form-group">
-								<h5>Asunto</h5>
-								<input type="text" class="form-control" name="asunto" ngModel required>
-							</div>
-							<div class="form-group">
-								<h5>E-mail</h5>
-								<input type="email" class="form-control" name="email" ngModel required>
-							</div>
-							<div class="form-group">
-								<h5>Mensaje</h5>
-								<textarea class="form-control" cols="30" rows="6" name="mensaje" ngModel required></textarea>
-							</div>
-							<button [disabled]="form1.invalid" type="submit" class="btn btn-primary">Enviar</button>
+							<form [formGroup]="form1" (ngSubmit)="contactForm1(form1.value, 'Quiero ser parte de MeraKids')">
+								<div class="form-group">
+									<h5>Nombre</h5>
+									<input type="text" class="form-control"  id="nombre" formControlName="nombre" [ngClass]="{ 'is-invalid': submitted1 && f1.nombre.errors }">
+									<div *ngIf="submitted1 && f1.nombre.errors" class="invalid-feedback">
+										<div *ngIf="f1.nombre.errors.required">Se requiere ingresar el nombre</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<h5>E-mail</h5>
+									<input type="email" class="form-control" id="email" formControlName="email" [ngClass]="{ 'is-invalid': submitted1 && f1.email.errors }">
+									<div *ngIf="submitted1 && f1.email.errors" class="invalid-feedback">
+										<div *ngIf="f1.email.errors.required">Se requiere ingresar un correo</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<h5>Mensaje</h5>
+									<textarea class="form-control" cols="30" rows="6" id="mensaje" formControlName="mensaje" [ngClass]="{ 'is-invalid': submitted1 && f1.mensaje.errors }"></textarea>
+									<div *ngIf="submitted1 && f1.mensaje.errors" class="invalid-feedback">
+										<div *ngIf="f1.mensaje.errors.required">Se requiere ingresar un mensaje</div>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-primary">Enviar</button>
 							</form>
 						</div>
 					</div>
@@ -88,24 +104,29 @@
 							<i>"Las buenas iniciativas se comparten"</i>
 						</h6>
 						<div class="card-body">
-							<form (ngSubmit)="contactForm(form2.value)" #form2="ngForm">
-							<div class="form-group">
-								<h5>Nombre</h5>
-								<input type="text" class="form-control" style="padding-left: 15px;" name="nombre" ngModel required>
-							</div>
-							<div class="form-group">
-								<h5>Asunto</h5>
-								<input type="text" class="form-control" name="asunto" ngModel required>
-							</div>
-							<div class="form-group">
-								<h5>E-mail</h5>
-								<input type="email" class="form-control" name="email" ngModel required>
-							</div>
-							<div class="form-group">
-								<h5>Mensaje</h5>
-								<textarea class="form-control" cols="30" rows="6" name="mensaje" ngModel required></textarea>
-							</div>
-							<button [disabled]="form2.invalid" type="submit" class="btn btn-primary">Enviar</button>
+							<form [formGroup]="form2" (ngSubmit)="contactForm2(form2.value, 'Quiero ser parte de MeraKids')">
+								<div class="form-group">
+									<h5>Nombre</h5>
+									<input type="text" class="form-control"  id="nombre" formControlName="nombre" [ngClass]="{ 'is-invalid': submitted2 && f2.nombre.errors }">
+									<div *ngIf="submitted2 && f2.nombre.errors" class="invalid-feedback">
+										<div *ngIf="f2.nombre.errors.required">Se requiere ingresar el nombre</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<h5>E-mail</h5>
+									<input type="email" class="form-control" id="email" formControlName="email" [ngClass]="{ 'is-invalid': submitted2 && f2.email.errors }">
+									<div *ngIf="submitted2 && f2.email.errors" class="invalid-feedback">
+										<div *ngIf="f2.email.errors.required">Se requiere ingresar un correo</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<h5>Mensaje</h5>
+									<textarea class="form-control" cols="30" rows="6" id="mensaje" formControlName="mensaje" [ngClass]="{ 'is-invalid': submitted2 && f2.mensaje.errors }"></textarea>
+									<div *ngIf="submitted2 && f2.mensaje.errors" class="invalid-feedback">
+										<div *ngIf="f2.mensaje.errors.required">Se requiere ingresar un mensaje</div>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-primary">Enviar</button>
 							</form>
 						</div>
 					</div>
@@ -122,24 +143,29 @@
 							<i>"Es tan valioso ponernos al servicio de otros"</i>
 						</h6>
 						<div class="card-body">
-							<form (ngSubmit)="contactForm(form3.value)" #form3="ngForm">
-							<div class="form-group">
-								<h5>Nombre</h5>
-								<input type="text" class="form-control" style="padding-left: 15px;" name="nombre" ngModel required>
-							</div>
-							<div class="form-group">
-								<h5>Asunto</h5>
-								<input type="text" class="form-control" name="asunto" ngModel required>
-							</div>
-							<div class="form-group">
-								<h5>E-mail</h5>
-								<input type="email" class="form-control" name="email" ngModel required>
-							</div>
-							<div class="form-group">
-								<h5>Mensaje</h5>
-								<textarea class="form-control" cols="30" rows="6" name="mensaje" ngModel required></textarea>
-							</div>
-							<button [disabled]="form3.invalid" type="submit" class="btn btn-primary">Enviar</button>
+							<form [formGroup]="form3" (ngSubmit)="contactForm3(form3.value, 'Quiero ser parte de MeraKids')">
+								<div class="form-group">
+									<h5>Nombre</h5>
+									<input type="text" class="form-control"  id="nombre" formControlName="nombre" [ngClass]="{ 'is-invalid': submitted3 && f3.nombre.errors }">
+									<div *ngIf="submitted3 && f3.nombre.errors" class="invalid-feedback">
+										<div *ngIf="f3.nombre.errors.required">Se requiere ingresar el nombre</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<h5>E-mail</h5>
+									<input type="email" class="form-control" id="email" formControlName="email" [ngClass]="{ 'is-invalid': submitted3 && f3.email.errors }">
+									<div *ngIf="submitted3 && f3.email.errors" class="invalid-feedback">
+										<div *ngIf="f3.email.errors.required">Se requiere ingresar un correo</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<h5>Mensaje</h5>
+									<textarea class="form-control" cols="30" rows="6" id="mensaje" formControlName="mensaje" [ngClass]="{ 'is-invalid': submitted3 && f3.mensaje.errors }"></textarea>
+									<div *ngIf="submitted3 && f3.mensaje.errors" class="invalid-feedback">
+										<div *ngIf="f3.mensaje.errors.required">Se requiere ingresar un mensaje</div>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-primary">Enviar</button>
 							</form>
 						</div>
 					</div>

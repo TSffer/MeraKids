@@ -5,8 +5,8 @@ import { Injectable } from "@angular/core";
 export class MessageService {
     constructor(private _http: HttpClient) {}
 
-    sendMessage(body: any){
-        console.log(body);
-        return this._http.post("http://localhost:3000/contactarse", body);
+    sendMessage(body: any, asunto: string){
+        body.asunto = asunto;
+        return this._http.post("https://merakidsapi.herokuapp.com/contactarse", body);
     }
 }
