@@ -8,8 +8,8 @@ module.exports = (formulario) => {
         service: "yahoo",
         secure: false,
         auth: {
-            user: "merakidsweb@yahoo.com",
-            pass: "dxlpjnvcccgwaucf",
+            user: "xxx@yahoo.com",
+            pass: "xxxxxxxxxxx",
         },
         debug: false,
         logger: true
