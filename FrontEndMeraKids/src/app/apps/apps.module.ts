@@ -22,6 +22,9 @@ import { BannerComponent } from './shared/banner/banner.component';
 import { BannerNavigationComponent } from './shared/banner-navigation/banner-navigation.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { RightslawComponent } from './rightslaw/rightslaw.component';
+import { RelayOnComponent2 } from './about/About-Components/relay-on1/relay-on.component2';
+import { RelayOnComponent3 } from './about/About-Components/relay-on2/relay-on.component3';
+
 
 @NgModule({
   declarations: [
@@ -37,6 +40,8 @@ import { RightslawComponent } from './rightslaw/rightslaw.component';
     BannerNavigationComponent,
     FooterComponent,
     RightslawComponent,
+    RelayOnComponent2,
+    RelayOnComponent3
   ],
   imports: [
     CommonModule,
